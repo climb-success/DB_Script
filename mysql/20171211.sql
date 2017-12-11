@@ -1,0 +1,18 @@
+--patch tracking information
+--20171211.sql
+--end of tracking information
+--create SUPER_GROUP
+
+CREATE TABLE SUPER_GROUP (
+	SUPER_GROUP_ID int UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	NAME varchar(30) NULL,
+	QQ int NULL,
+	QQ_CODE varchar(200) NULL,
+	WEIXIN varchar(100) NULL,
+	WEIXIN_CODE varchar(200) NULL,
+	YEAR int NULL,
+	SCHOOL_ID int NOT null,
+	PROFESSIONAL_ID int null,
+	UPDATE_DATE datetime NULL,
+	CONSTRAINT un_SUPER_GROUP UNIQUE (NAME)
+)ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
